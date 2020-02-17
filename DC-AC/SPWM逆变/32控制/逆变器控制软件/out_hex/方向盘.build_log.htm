@@ -1,0 +1,162 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kegg kegg, HP Inc., LIC=FUUKP-MXXNM-RT830-BHC5C-ND0A8-SZKFF
+ 
+Tool Versions:
+Toolchain:       *** Unknown Product ***  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.31.18.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+C:\Users\kegg\Desktop\SPWM逆变\32控制\逆变器控制软件\stmucos.uvproj
+Project File Date:  07/22/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+APP\main.c(123): warning:  #223-D: function "PWMTimer" declared implicitly
+  	PWMTimer(25000);	//初始化PWM 	
+APP\main.c(124): warning:  #223-D: function "DCOut" declared implicitly
+  	DCOut(ENABLE);
+APP\main.c(126): warning:  #223-D: function "ADC1_Configuration" declared implicitly
+  	ADC1_Configuration();		//采样初始化
+APP\main.c(128): warning:  #223-D: function "ReadCanShu" declared implicitly
+  	ReadCanShu();
+APP\main.c(138): warning:  #223-D: function "ban" declared implicitly
+  			ban();
+APP\main.c(140): warning:  #223-D: function "Time1Config" declared implicitly
+  	Time1Config();			//SPWM
+APP\main.c(141): warning:  #223-D: function "SPWMState" declared implicitly
+  	SPWMState(ENABLE );
+APP\main.c(154): warning:  #223-D: function "LedGreen" declared implicitly
+  					LedGreen(0);
+APP\main.c(155): warning:  #223-D: function "WenKong" declared implicitly
+  					WenKong(0);
+APP\main.c(170): warning:  #223-D: function "LedGreen" declared implicitly
+  					LedGreen(0);
+APP\main.c(171): warning:  #223-D: function "WenKong" declared implicitly
+  					WenKong(0);
+APP\main.c(182): warning:  #223-D: function "LedGreen" declared implicitly
+  					LedGreen(0);
+APP\main.c(183): warning:  #223-D: function "WenKong" declared implicitly
+  					WenKong(0);
+APP\main.c(189): warning:  #223-D: function "WenKong" declared implicitly
+  			WenKong(1);
+APP\main.c(105): warning:  #177-D: variable "l"  was declared but never referenced
+  	INT16U i=0,j=0,l=0;
+APP\main.c(106): warning:  #177-D: variable "oldk"  was declared but never referenced
+  	FP32 vbat=0,k=0,oldk=0,dianliu=0,wendu=0;
+APP\main.c(106): warning:  #177-D: variable "wendu"  was declared but never referenced
+  	FP32 vbat=0,k=0,oldk=0,dianliu=0,wendu=0;
+APP\main.c(218): warning:  #223-D: function "DianLiuInit" declared implicitly
+  	DianLiuInit();
+APP\main.c(221): warning:  #223-D: function "LedGreen" declared implicitly
+  		LedGreen(1);		
+APP\main.c(241): warning:  #223-D: function "GetAnJian" declared implicitly
+  		if(GetAnJian()==0)
+APP\main.c(243): warning:  #223-D: function "DCOut" declared implicitly
+  			DCOut(DISABLE);
+APP\main.c(244): warning:  #223-D: function "SPWMState" declared implicitly
+  			SPWMState(DISABLE );
+APP\main.c(246): warning:  #223-D: function "Getele" declared implicitly
+  			Getele();
+APP\main.c(247): warning:  #223-D: function "SaveCanShu" declared implicitly
+  			SaveCanShu();
+APP\main.c(213): warning:  #177-D: variable "j"  was declared but never referenced
+  	INT32U j=0,b=0;
+APP\main.c(213): warning:  #177-D: variable "b"  was declared but never referenced
+  	INT32U j=0,b=0;
+APP\main.c: 26 warnings, 0 errors
+compiling Timer.c...
+compiling stm32f10x_it.c...
+APP\stm32f10x_it.c(163): warning:  #177-D: variable "value"  was declared but never referenced
+  	INT32S value=0;
+APP\stm32f10x_it.c: 1 warning, 0 errors
+compiling led.c...
+compiling spwm.c...
+APP\spwm.c(116): warning:  #177-D: variable "i"  was declared but never referenced
+  	INT16U i=0;
+APP\spwm.c(129): warning:  #177-D: variable "j"  was declared but never referenced
+  	INT32U j=0,K=(u32)&dmabuff;
+APP\spwm.c(129): warning:  #177-D: variable "K"  was declared but never referenced
+  	INT32U j=0,K=(u32)&dmabuff;
+APP\spwm.c(246): warning:  #177-D: variable "TIM_TimeBaseStructure"  was declared but never referenced
+  	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+APP\spwm.c(247): warning:  #177-D: variable "TIM_OCInitStructure"  was declared but never referenced
+    TIM_OCInitTypeDef  TIM_OCInitStructure;
+APP\spwm.c(249): warning:  #177-D: variable "DMA_InitStructure"  was declared but never referenced
+  	DMA_InitTypeDef DMA_InitStructure;
+APP\spwm.c(250): warning:  #177-D: variable "TIM_BDTR_InitStructure"  was declared but never referenced
+    TIM_BDTRInitTypeDef TIM_BDTR_InitStructure;
+APP\spwm.c(301): warning:  #177-D: variable "value"  was declared but never referenced
+  	INT32S value=0;
+APP\spwm.c(314): warning:  #177-D: variable "spwm"  was declared but never referenced
+  	GPIO_InitTypeDef spwm;
+APP\spwm.c: 9 warnings, 0 errors
+compiling eeprom.c...
+compiling adc.c...
+BSP\adc.c(186): warning:  #177-D: variable "j"  was declared but never referenced
+  	FP32 vol=0,j=0; 
+BSP\adc.c(211): warning:  #177-D: variable "j"  was declared but never referenced
+  	FP32 vol=0,j=0; 
+BSP\adc.c(224): warning:  #177-D: variable "vol"  was declared but never referenced
+  	FP32 vol=0,j=0; 
+BSP\adc.c(224): warning:  #177-D: variable "j"  was declared but never referenced
+  	FP32 vol=0,j=0; 
+BSP\adc.c: 4 warnings, 0 errors
+compiling ST7565S.c...
+BSP\ST7565S.c(357): warning:  #550-D: variable "c2"  was set but never used
+  	INT8U  c1,c2;
+BSP\ST7565S.c: 1 warning, 0 errors
+compiling stm32f10x_exti.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling jiami.c...
+compiling stm32f10x_rcc.c...
+compiling serial.c...
+compiling misc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_adc.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_tim.c...
+assembling startup_stm32f10x_hd.s...
+assembling os_cpu_a.asm...
+compiling stm32f10x_spi.c...
+compiling os_dbg.c...
+compiling os_core.c...
+compiling stm32f10x_dma.c...
+compiling os_cpu_c.c...
+compiling os_flag.c...
+compiling os_mem.c...
+compiling os_mbox.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_tmr.c...
+compiling os_sem.c...
+compiling os_time.c...
+compiling os_task.c...
+linking...
+Program Size: Code=25764 RO-data=4516 RW-data=1224 ZI-data=11448  
+FromELF: creating hex file...
+".\out_hex\方向盘.axf" - 0 Error(s), 41 Warning(s).
+Build Time Elapsed:  00:00:14
+</pre>
+</body>
+</html>

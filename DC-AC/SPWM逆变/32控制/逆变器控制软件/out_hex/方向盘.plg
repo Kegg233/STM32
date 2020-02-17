@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\350W逆变器\逆变器控制软件\stmucos.uvproj
+Project File Date:  07/27/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling spwm.c...
+APP\spwm.c(116): warning:  #177-D: variable "i" was declared but never referenced
+APP\spwm.c(129): warning:  #177-D: variable "j" was declared but never referenced
+APP\spwm.c(129): warning:  #177-D: variable "K" was declared but never referenced
+APP\spwm.c(246): warning:  #177-D: variable "TIM_TimeBaseStructure" was declared but never referenced
+APP\spwm.c(247): warning:  #177-D: variable "TIM_OCInitStructure" was declared but never referenced
+APP\spwm.c(249): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+APP\spwm.c(250): warning:  #177-D: variable "TIM_BDTR_InitStructure" was declared but never referenced
+APP\spwm.c(301): warning:  #177-D: variable "value" was declared but never referenced
+APP\spwm.c(314): warning:  #177-D: variable "spwm" was declared but never referenced
+compiling led.c...
+compiling Timer.c...
+compiling jiami.c...
+compiling serial.c...
+linking...
+Program Size: Code=25788 RO-data=4516 RW-data=1224 ZI-data=11448  
+FromELF: creating hex file...
+".\out_hex\方向盘.axf" - 0 Error(s), 9 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+APP\main.c(123): warning:  #223-D: function "PWMTimer" declared implicitly
+APP\main.c(124): warning:  #223-D: function "DCOut" declared implicitly
+APP\main.c(126): warning:  #223-D: function "ADC1_Configuration" declared implicitly
+APP\main.c(128): warning:  #223-D: function "ReadCanShu" declared implicitly
+APP\main.c(138): warning:  #223-D: function "ban" declared implicitly
+APP\main.c(140): warning:  #223-D: function "Time1Config" declared implicitly
+APP\main.c(141): warning:  #223-D: function "SPWMState" declared implicitly
+APP\main.c(154): warning:  #223-D: function "LedGreen" declared implicitly
+APP\main.c(155): warning:  #223-D: function "WenKong" declared implicitly
+APP\main.c(170): warning:  #223-D: function "LedGreen" declared implicitly
+APP\main.c(171): warning:  #223-D: function "WenKong" declared implicitly
+APP\main.c(182): warning:  #223-D: function "LedGreen" declared implicitly
+APP\main.c(183): warning:  #223-D: function "WenKong" declared implicitly
+APP\main.c(189): warning:  #223-D: function "WenKong" declared implicitly
+APP\main.c(105): warning:  #177-D: variable "l" was declared but never referenced
+APP\main.c(106): warning:  #177-D: variable "oldk" was declared but never referenced
+APP\main.c(106): warning:  #177-D: variable "wendu" was declared but never referenced
+APP\main.c(218): warning:  #223-D: function "DianLiuInit" declared implicitly
+APP\main.c(221): warning:  #223-D: function "LedGreen" declared implicitly
+APP\main.c(241): warning:  #223-D: function "GetAnJian" declared implicitly
+APP\main.c(243): warning:  #223-D: function "DCOut" declared implicitly
+APP\main.c(244): warning:  #223-D: function "SPWMState" declared implicitly
+APP\main.c(246): warning:  #223-D: function "Getele" declared implicitly
+APP\main.c(247): warning:  #223-D: function "SaveCanShu" declared implicitly
+APP\main.c(213): warning:  #177-D: variable "j" was declared but never referenced
+APP\main.c(213): warning:  #177-D: variable "b" was declared but never referenced
+linking...
+Program Size: Code=25788 RO-data=4516 RW-data=1224 ZI-data=11448  
+FromELF: creating hex file...
+".\out_hex\方向盘.axf" - 0 Error(s), 26 Warning(s).
